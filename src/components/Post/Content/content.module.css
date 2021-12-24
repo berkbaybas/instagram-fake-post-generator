@@ -1,0 +1,22 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px 8px 16px;
+  border-bottom: 0.3px solid #bebebe;
+}
+.likeContainer {
+  margin-bottom: 8px;
+}
+.commentContainer,
+.dateContainer {
+  color: #8e8e8e;
+  margin-top: 8px;
+}
+
+.commentContainer {
+  font-size: 14px;
+}
+
+.dateContainer {
+  font-size: 10px;
+}

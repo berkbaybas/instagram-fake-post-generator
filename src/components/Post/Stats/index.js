@@ -1,7 +1,7 @@
-import LikeIcon from "../Icons/LikeIcon";
-import CommentIcon from "../Icons/CommentIcon";
-import ShareIcon from "../Icons/ShareIcon";
-import SaveIcon from "../Icons/SaveIcon";
+import LikeIcon from "../../Icons/LikeIcon";
+import CommentIcon from "../../Icons/CommentIcon";
+import ShareIcon from "../../Icons/ShareIcon";
+import SaveIcon from "../../Icons/SaveIcon";
 
 import styles from "./stats.module.css";
 

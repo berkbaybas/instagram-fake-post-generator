@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Post from "./Post";
-import Stats from "./Stats";
+import Footer from "./Footer";
 
 import "../App.css";
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <Post />
-      <Stats />
+      <Footer />
     </div>
   );
 }
