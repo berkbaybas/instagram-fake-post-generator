@@ -1,0 +1,20 @@
+.statsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.iconWrapper {
+  padding: 8px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.leftStats,
+.rightStats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
