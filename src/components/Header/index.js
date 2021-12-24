@@ -2,7 +2,7 @@ import { FiMoreHorizontal } from "react-icons/fi";
 
 import styles from "./header.module.css";
 
-function index() {
+function Header() {
   return (
     <header>
       <div className={styles.userContainer}>
@@ -18,4 +18,4 @@ function index() {
   );
 }
 
-export default index;
+export default Header;

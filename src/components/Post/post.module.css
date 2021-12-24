@@ -1,0 +1,10 @@
+.post-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-container img {
+  background-size: cover;
+  max-width: 100%;
+}
