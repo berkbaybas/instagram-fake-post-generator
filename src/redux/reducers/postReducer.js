@@ -2,19 +2,13 @@ import { initialState } from "../store";
 
 const postReducer = (
   state = {
-    post: {
-      username: "username",
-      url: "https://picsum.photos/600/600",
-      like: 123,
-      comment: 123,
-      saved: false,
-      liked: true,
-      date: 3,
-    },
+    post: {},
   },
   action
 ) => {
   switch (action.type) {
+    case "HANDLE_USERNAME":
+      return { ...state, username: action.payload };
     default:
       return state;
   }

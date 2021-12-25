@@ -1,10 +1,18 @@
-.post-container {
-  width: 100%;
+.postWrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.post-container img {
+.postContainer {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+}
+
+.postContainer img {
   background-size: cover;
   max-width: 100%;
 }

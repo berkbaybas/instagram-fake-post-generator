@@ -1,9 +1,8 @@
 import { Provider } from "react-redux";
 import store from "./redux/store";
 
-import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 import Post from "./components/Post";
-import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -11,9 +10,8 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Header />
+        <Sidebar />
         <Post />
-        <Footer />
       </div>
     </Provider>
   );

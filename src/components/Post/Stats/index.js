@@ -10,7 +10,12 @@ function Stats() {
     <div className={styles.statsContainer}>
       <div className={styles.leftStats}>
         <div className={styles.iconWrapper}>
-          <LikeIcon className={styles.icon} />
+          <LikeIcon
+            fill="black"
+            stroke="black"
+            color="black"
+            className={styles.icon}
+          />
         </div>
         <div className={styles.iconWrapper}>
           <CommentIcon className={styles.icon} />
