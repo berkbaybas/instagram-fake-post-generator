@@ -1,22 +1,35 @@
 .sidebarContainer {
   padding: 16px;
   border-right: 0.3px solid #bebebe;
+  height: 100vh;
 }
 .title {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 24px;
-  border-bottom: 0.3px solid #bebebe;
+  border-bottom: 1px solid #bebebe;
   padding-bottom: 16px;
   margin-bottom: 32px;
 }
 
-input {
+input,
+textarea {
   width: 100%;
   border: none;
-  border-bottom: 1px solid black;
-  padding: 8px;
+  border-bottom: 0.3px solid #bebebe;
+  padding: 16px;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inputWrapper {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }

@@ -9,7 +9,7 @@ function Header() {
     <header>
       <div className={styles.userContainer}>
         <div className={styles.imageContainer}>
-          <img className={styles.userImage} src="https://picsum.photos/32/32" />
+          <img className={styles.userImage} src={post.profileUrl} />
         </div>
         <p className={styles.userInfo}>{post.username}</p>
       </div>
