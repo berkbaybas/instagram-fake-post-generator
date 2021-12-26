@@ -94,6 +94,9 @@ function Sidebar() {
       <div className={styles.inputWrapper}>
         <label>Caption:</label>
         <textarea
+          rows="4"
+          cols="50"
+          maxLength="200"
           value={post.caption}
           onChange={(e) => {
             onChangeCaption(e.target.value);
