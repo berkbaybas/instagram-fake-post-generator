@@ -28,3 +28,7 @@
 .username {
   font-weight: 600;
 }
+
+.postInfo {
+  overflow-wrap: break-word;
+}

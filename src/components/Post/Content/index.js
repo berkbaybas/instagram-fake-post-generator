@@ -12,7 +12,7 @@ function Content() {
         </p>
       </div>
       <div className={styles.postInfoContainer}>
-        <p>
+        <p className={styles.postInfo}>
           <span className={styles.username}>{post.username} </span>
           {post.caption}
         </p>
