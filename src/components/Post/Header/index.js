@@ -4,7 +4,7 @@ import { FiMoreHorizontal } from "react-icons/fi";
 import styles from "./header.module.css";
 
 function Header() {
-  const post = useSelector((state) => state.post);
+  const post = useSelector((state) => state.content.post);
   return (
     <header>
       <div className={styles.userContainer}>

@@ -7,15 +7,16 @@ import {
   handleCaption,
   handleUrl,
   handleProfileUrl,
-} from "../../redux/actions/postActions";
+  handleSaved,
+  handleLiked,
+} from "../../redux/actions/contentActions";
 import styles from "./sidebar.module.css";
 
 function Sidebar() {
   const dispatch = useDispatch();
-  const post = useSelector((state) => state.post);
+  const post = useSelector((state) => state.content.post);
 
   const onChangeUsername = (username) => {
-    console.log(username);
     dispatch(handleUsername(username));
   };
 
@@ -41,6 +42,14 @@ function Sidebar() {
 
   const onChangeProfileUrl = (urlProfile) => {
     dispatch(handleProfileUrl(urlProfile));
+  };
+
+  const onChangeSaved = (saved) => {
+    dispatch(handleSaved(saved));
+  };
+
+  const onChangeLiked = (liked) => {
+    dispatch(handleLiked(liked));
   };
 
   return (
@@ -108,7 +117,7 @@ function Sidebar() {
         <label>Image Profile Url:</label>
         <input
           value={post.profileUrl}
-          type="link"
+          type="url"
           onChange={(e) => {
             onChangeProfileUrl(e.target.value);
           }}
@@ -119,11 +128,34 @@ function Sidebar() {
         <label>Image Url:</label>
         <input
           value={post.url}
-          type="link"
+          type="url"
           onChange={(e) => {
             onChangeUrl(e.target.value);
           }}
         />
+      </div>
+
+      <div className={styles.inputCheckboxWrapper}>
+        <div className={styles.inputCheckboxContainer}>
+          <label>Like:</label>
+          <input
+            checked={post.liked}
+            type="checkbox"
+            onChange={(e) => {
+              onChangeLiked(e.target.checked);
+            }}
+          />
+        </div>
+        <div className={styles.inputCheckboxContainer}>
+          <label>Save:</label>
+          <input
+            checked={post.saved}
+            type="checkbox"
+            onChange={(e) => {
+              onChangeSaved(e.target.checked);
+            }}
+          />
+        </div>
       </div>
     </aside>
   );

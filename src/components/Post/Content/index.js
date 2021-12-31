@@ -3,8 +3,7 @@ import { useSelector } from "react-redux";
 import styles from "./content.module.css";
 
 function Content() {
-  const post = useSelector((state) => state.post);
-
+  const post = useSelector((state) => state.content.post);
   return (
     <div className={styles.contentContainer}>
       <div className={styles.likeContainer}>

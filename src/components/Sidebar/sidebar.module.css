@@ -31,5 +31,19 @@ label {
 
 .inputWrapper {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.inputCheckboxWrapper {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  border-bottom: 0.3px solid #bebebe;
+}
+
+.inputCheckboxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

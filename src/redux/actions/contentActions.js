@@ -25,3 +25,11 @@ export const handleUrl = (url) => {
 export const handleProfileUrl = (profileUrl) => {
   return { type: "HANDLE_PROFILEURL", payload: profileUrl };
 };
+
+export const handleSaved = (saved) => {
+  return { type: "HANDLE_SAVED", payload: saved };
+};
+
+export const handleLiked = (liked) => {
+  return { type: "HANDLE_LIKED", payload: liked };
+};
