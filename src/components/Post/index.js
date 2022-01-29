@@ -3,6 +3,7 @@ import Stats from "./Stats";
 import Content from "./Content";
 import Header from "./Header";
 import Footer from "./Footer";
+import ImageLoader from "../Loader/ImageLoader";
 
 import styles from "./post.module.css";
 
@@ -12,7 +13,7 @@ function Post() {
     <div className={styles.postWrapper}>
       <div className={styles.postContainer}>
         <Header />
-        <img src={post.url} />
+        <div>{post.url ? <img src={post.url} /> : <ImageLoader />}</div>
         <Stats />
         <Content />
         <Footer />
