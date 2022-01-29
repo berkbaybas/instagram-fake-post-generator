@@ -3,10 +3,13 @@
   flex-direction: column;
   padding: 0px 16px 16px 16px;
   border-bottom: 0.3px solid #efefef;
+  font-size: 14px;
 }
+
 .likeContainer {
   margin-bottom: 8px;
 }
+
 .like {
   font-weight: 600;
 }
@@ -15,10 +18,6 @@
 .dateContainer {
   color: #8e8e8e;
   margin-top: 8px;
-}
-
-.commentContainer {
-  font-size: 14px;
 }
 
 .dateContainer {
@@ -31,4 +30,5 @@
 
 .postInfo {
   overflow-wrap: break-word;
+  line-height: 16px;
 }
