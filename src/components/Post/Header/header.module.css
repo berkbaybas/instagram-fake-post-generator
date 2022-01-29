@@ -22,13 +22,19 @@ header {
 }
 
 .imageContainer {
+  height: 42px;
+  width: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3px;
-  border: 2px red solid;
   border-radius: 9999px;
 }
+
+.hasStory {
+  border: 2px solid red;
+}
+
 .userInfo {
   margin-left: 14px;
   font-size: 14px;

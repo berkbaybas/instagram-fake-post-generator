@@ -9,7 +9,9 @@ import {
   handleProfileUrl,
   handleSaved,
   handleLiked,
+  handleStory,
 } from "../../redux/actions/contentActions";
+
 import styles from "./sidebar.module.css";
 
 function Sidebar() {
@@ -50,6 +52,10 @@ function Sidebar() {
 
   const onChangeLiked = (liked) => {
     dispatch(handleLiked(liked));
+  };
+
+  const onChangeStory = (story) => {
+    dispatch(handleStory(story));
   };
 
   return (
@@ -153,6 +159,16 @@ function Sidebar() {
             type="checkbox"
             onChange={(e) => {
               onChangeSaved(e.target.checked);
+            }}
+          />
+        </div>
+        <div className={styles.inputCheckboxContainer}>
+          <label>Story:</label>
+          <input
+            checked={post.story}
+            type="checkbox"
+            onChange={(e) => {
+              onChangeStory(e.target.checked);
             }}
           />
         </div>

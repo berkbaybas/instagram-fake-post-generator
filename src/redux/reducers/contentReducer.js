@@ -1,17 +1,16 @@
 const initialState = {
-  username: "username",
-  like: 1223,
-
   post: {
     username: "username",
     url: "https://picsum.photos/600/600",
     profileUrl: "https://picsum.photos/32/32",
-    caption: "lorem ipsum sit dolor amet!",
-    like: 123,
-    comment: 123,
+    caption:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    like: 59,
+    comment: 16,
+    date: 6,
     saved: true,
     liked: true,
-    date: 3,
+    story: true,
   },
 };
 
@@ -35,6 +34,8 @@ const contenteducer = (state = initialState, action) => {
       return { ...state, post: { ...state.post, saved: action.payload } };
     case "HANDLE_LIKED":
       return { ...state, post: { ...state.post, liked: action.payload } };
+    case "HANDLE_STORY":
+      return { ...state, post: { ...state.post, story: action.payload } };
     default:
       return state;
   }

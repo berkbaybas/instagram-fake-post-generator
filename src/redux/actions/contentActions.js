@@ -33,3 +33,7 @@ export const handleSaved = (saved) => {
 export const handleLiked = (liked) => {
   return { type: "HANDLE_LIKED", payload: liked };
 };
+
+export const handleStory = (story) => {
+  return { type: "HANDLE_STORY", payload: story };
+};

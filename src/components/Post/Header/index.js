@@ -8,7 +8,10 @@ function Header() {
   return (
     <header>
       <div className={styles.userContainer}>
-        <div className={styles.imageContainer}>
+        <div
+          className={`${styles.imageContainer}`}
+          style={{ border: post.story ? "2px solid red" : "none" }}
+        >
           <img className={styles.userImage} src={post.profileUrl} />
         </div>
         <p className={styles.userInfo}>{post.username}</p>
