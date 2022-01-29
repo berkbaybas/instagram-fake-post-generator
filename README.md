@@ -1,6 +1,6 @@
 # instagram-fake-post-generator
 - fake instagram post maker
-- Demo: [https://instagram-fake-post-generator.vercel.app/](https://instagram-fake-post-generator.vercel.app/).
+- Demo: [Link](https://instagram-post-generator.vercel.app/).
 
 ## Tools
 
