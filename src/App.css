@@ -1,9 +1,16 @@
 body {
-  height: 100vh;
+  height: auto;
 }
+
 .App {
   height: 100%;
-
   display: grid;
   grid-template-columns: 1fr 4fr;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }

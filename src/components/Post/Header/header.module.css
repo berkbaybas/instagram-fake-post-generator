@@ -41,7 +41,7 @@ header {
   font-weight: 600;
 }
 
-button {
+.btnDots {
   display: flex;
   justify-content: center;
   align-items: center;

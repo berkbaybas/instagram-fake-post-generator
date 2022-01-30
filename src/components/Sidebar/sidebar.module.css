@@ -1,7 +1,6 @@
 .sidebarContainer {
   padding: 16px;
   border-right: 0.3px solid #bebebe;
-  height: 100vh;
 }
 .title {
   font-weight: bold;
@@ -46,4 +45,16 @@ label {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.btnScreenshot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
