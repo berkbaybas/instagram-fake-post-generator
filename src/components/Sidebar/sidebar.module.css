@@ -1,6 +1,7 @@
 .sidebarContainer {
   padding: 16px;
   border-right: 0.3px solid #bebebe;
+  min-width: 300px;
 }
 .title {
   font-weight: bold;
