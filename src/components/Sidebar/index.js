@@ -23,15 +23,15 @@ function Sidebar() {
   };
 
   const onChangelike = (like) => {
-    dispatch(handleLike(like));
+    dispatch(handleLike(Number(like)));
   };
 
   const onChangeComment = (comment) => {
-    dispatch(handleComment(comment));
+    dispatch(handleComment(Number(comment)));
   };
 
   const onChangeDate = (date) => {
-    dispatch(handleDate(date));
+    dispatch(handleDate(Number(date)));
   };
 
   const onChangeCaption = (caption) => {
@@ -77,6 +77,7 @@ function Sidebar() {
         <label>Likes:</label>
         <input
           type="number"
+          min="0"
           value={post.like}
           onChange={(e) => {
             onChangelike(e.target.value);
@@ -88,6 +89,7 @@ function Sidebar() {
         <label>Comment:</label>
         <input
           type="number"
+          min="0"
           value={post.comment}
           onChange={(e) => {
             onChangeComment(e.target.value);
@@ -99,6 +101,7 @@ function Sidebar() {
         <label>Date:</label>
         <input
           type="number"
+          min="0"
           value={post.date}
           onChange={(e) => {
             onChangeDate(e.target.value);

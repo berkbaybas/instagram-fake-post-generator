@@ -7,7 +7,6 @@ import styles from "./header.module.css";
 
 function Header() {
   const post = useSelector((state) => state.content.post);
-  console.log(post.profileUrl);
   return (
     <header>
       <div className={styles.userContainer}>

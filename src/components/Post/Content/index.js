@@ -8,7 +8,7 @@ function Content() {
     <div className={styles.contentContainer}>
       <div className={styles.likeContainer}>
         <p className={styles.like}>
-          {post.like} like{post.like > 1 ? "s" : ""}
+          {post.like} like{post.like !== 1 && "s"}
         </p>
       </div>
       <div className={styles.postInfoContainer}>
@@ -19,12 +19,12 @@ function Content() {
       </div>
       <div className={styles.commentContainer}>
         <span>
-          View all {post.comment} comment{post.comment > 1 ? "s" : ""}
+          View all {post.comment} comment{post.comment !== 1 && "s"}
         </span>
       </div>
       <div className={styles.dateContainer}>
         <span>
-          {post.date} DAY{post.date > 1 ? "S" : ""} AGO
+          {post.date} DAY{post.date !== 1 && "S"} AGO
         </span>
       </div>
     </div>
